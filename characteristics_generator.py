@@ -1,3 +1,12 @@
+'''
+Using functions to generate a handful of characteristics in order to
+
+    1. Achieve a bell curve in the "critical level" population pool
+    2. Have the mock data set achieve similar statistics to 
+    our actual applicant pool
+
+'''
+
 import random
 
 def critical_level_generator():
@@ -117,6 +126,8 @@ def employment_generate():
     weights = [.6602 , .2521 , .086 , .0016]
 
 
+
+# Attach each function to a variable
 critical_level = critical_level_generator()
 gender = gender_generate()
 age = age_generate()
@@ -130,6 +141,9 @@ household_with_insurance = household_with_insurance_generate()
 insurance_plan = insurance_plan_generate()
 employment = employment_generate()
 
+
+
+# Create dictionary to house organize our characteristics
 characteristics_dictionary = {
     'critical level' : critical_level, 
     'gender' : gender, 
