@@ -1,0 +1,31 @@
+parameters[1 = Very Critical || 2.5 = neutral || 5 = non-critical]
+
+Z55 – Problems related to education and literacy 
+[1 - The individual has no education & is illiterate. This affects their ability to find opportunities to provide for themselves & their families || 5 - This individual achieved the highest levels of education. This opens up lots of opportunities for this individual to provide for themselves & their families]
+
+Z56 – Problems related to employment and unemployment 
+[1 - This individual is very undesirable to employers & has a very hard time finding employment || This individual has a very stable job & has abundant / predictable income]
+ 
+Z57 – Occupational exposure to risk factors 
+[1 - Their job is very dangerous to their physical / emotional / & mental health || 5 - This individual works in a very safe & secure environment]
+ 
+Z58 – Problems related to physical environment 
+[1 - This individual has to overcome great physical barriers in order to achieve any task || 5 - This individual is located in an environment that is very easy to navigate & fulfill all their needs]
+
+Z59 – Problems related to housing and economic circumstances 
+[1 - This individual has never had a home. The economic system suppresses this individual & makes it very difficult to improve their situation || 5 - This person has always had a stable home environment their entire life. Their economic circumstance make it easy for them to succeed]
+
+Z60 – Problems related to social environment 
+[1 - Their social environment is very oppressive & isolating || 5 - This individual has a very healthy & reliable social network that encourages & supports them]
+
+Z62 – Problems related to upbringing 
+[1 - This individual had a very abusive & traumatizing upbringing. This has shaped their outlet & mindset as an adult || 5 - This individual grew up in a very stable & encouraging environment. This has had a very positive impact on their mindset & psychology as their mind has developed]
+
+Z63 – Other problems related to primary support group, including family circumstances 
+[1 - This individual’s family & support system is very abusive & take advantage of This individual’s time & resources || 5 - This individual has a very helpful support group & very loving family that helps support this individual mentally / spiritually / & financially]
+
+Z64 – Problems related to certain psychosocial circumstances relating to pregnancy
+[1 - This individual has multiple unwanted children || 5 - This individual has no children]
+
+Z65 – Problems related to other psychosocial circumstances
+[1 - This individual has a number of psychological barriers that makes operating normally in modern society very difficult || This individual is mentally very healthy & stable]

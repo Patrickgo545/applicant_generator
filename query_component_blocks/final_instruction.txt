@@ -1,0 +1,7 @@
+Based on the values you’ve chosen for each SDOH parameter, consider a realistic scenario of the individual I’ve provided for you 
+
+From the perspective of that individual applying for a food assistance program. Answer all of the questions in my Health Equity Questionnaire(provided below).
+
+Under the “Story” Section:  Write a response this individual would write under a column in the food assistance survey that states “why do you need food assistance”. The max length of the response is unlimited. When writing the individual’s response. Add context that an individual is likely to add when filling out an application like this one. Context such as kids / hardships / ailments / grievances / etc.
+
+Then ONLY give me the completed HEQ in JSON format. Nothing else

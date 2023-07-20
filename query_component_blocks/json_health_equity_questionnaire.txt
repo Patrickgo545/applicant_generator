@@ -1,0 +1,247 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "array",
+	"items": {
+		"type": "object",
+		"properties": {
+			"story": {
+				"type": "string",
+				"$comment": "A brief description of the applicant's current situation."
+			},
+			"gender": {
+				"type": "string",
+				"$comment": "The applicant's gender."
+			},
+			"enough_food": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has enough food."
+			},
+			"houshold_size": {
+				"type": "integer",
+				"$comment": "The number of individuals in the applicant's household."
+			},
+			"insecurity_frequency": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's food insecurity."
+			},
+			"illnesses": {
+				"type": "string",
+				"$comment": "The illnesses that the applicant suffers from."
+			},
+			"posted": {
+				"type": "string",
+				"format": "date-time",
+				"$comment": "The time when the applicant's data was posted."
+			},
+			"health_insurance": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has health insurance."
+			},
+			"health_plan": {
+				"type": "string",
+				"$comment": "The type of health plan that the applicant has."
+			},
+			"children_in_household": {
+				"type": "integer",
+				"$comment": "The number of children in the applicant's household."
+			},
+			"seniors_in_household": {
+				"type": "integer",
+				"$comment": "The number of seniors in the applicant's household."
+			},
+			"medical_transportation": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has access to medical transportation."
+			},
+			"grocery_transportation": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has access to grocery transportation."
+			},
+			"dental_transportation": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has access to dental transportation."
+			},
+			"internet_access": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has access to the internet."
+			},
+			"computer_in_home": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has a computer at home."
+			},
+			"preferred_language": {
+				"type": "string",
+				"$comment": "The language that the applicant prefers to use."
+			},
+			"english_as_second_language": {
+				"type": "boolean",
+				"$comment": "Whether English is a second language for the applicant."
+			},
+			"orientation": {
+				"type": "string",
+				"$comment": "The sexual orientation of the applicant."
+			},
+			"race": {
+				"type": "string",
+				"$comment": "The race of the applicant."
+			},
+			"ethnicity": {
+				"type": "string",
+				"$comment": "The ethnicity of the applicant."
+			},
+			"cant_afford_balanced_meals": {
+				"type": "string",
+				"$comment": "How often the applicant can't afford balanced meals."
+			},
+			"skipped_meals": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has skipped meals."
+			},
+			"benefits": {
+				"type": "string",
+				"$comment": "The benefits the applicant is receiving."
+			},
+			"interested_in_other_programs": {
+				"type": "boolean",
+				"$comment": "Whether the applicant is interested in other programs."
+			},
+			"living_situation_today": {
+				"type": "string",
+				"$comment": "The applicant's current living situation."
+			},
+			"problems_with_housing": {
+				"type": "string",
+				"$comment": "The problems the applicant is facing with their housing."
+			},
+			"assistance_required_for_housing": {
+				"type": "string",
+				"$comment": "The type of assistance the applicant needs for their housing."
+			},
+			"risk_of_losing_services": {
+				"type": "boolean",
+				"$comment": "Whether the applicant is at risk of losing services."
+			},
+			"want_help_with_employment": {
+				"type": "string",
+				"$comment": "The type of employment help the applicant needs."
+			},
+			"how_hard_to_pay_for_basics": {
+				"type": "string",
+				"$comment": "How hard it is for the applicant to pay for basic needs."
+			},
+			"income_bracket": {
+				"type": "string",
+				"$comment": "The applicant's income bracket."
+			},
+			"live_with_illness": {
+				"type": "boolean",
+				"$comment": "Whether the applicant lives with an illness."
+			},
+			"illness_other_family_members": {
+				"type": "boolean",
+				"$comment": "Whether other family members of the applicant have an illness."
+			},
+			"difficulty_remembering_making_decisions": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has difficulty remembering or making decisions."
+			},
+			"difficulty_doing_errands_alone": {
+				"type": "boolean",
+				"$comment": "Whether the applicant has difficulty doing errands alone."
+			},
+			"health_insurance_type": {
+				"type": "string",
+				"$comment": "The type of health insurance the applicant has."
+			},
+			"physically_hurt_you": {
+				"type": "string",
+				"$comment": "The frequency of physical harm inflicted on the applicant."
+			},
+			"talk_down_to_you": {
+				"type": "string",
+				"$comment": "The frequency of derogatory remarks directed at the applicant."
+			},
+			"threaten_you_with_harm": {
+				"type": "string",
+				"$comment": "The frequency of threats directed at the applicant."
+			},
+			"scream_or_curse_at_you": {
+				"type": "string",
+				"$comment": "The frequency of verbal abuse experienced by the applicant."
+			},
+			"date_of_birth": {
+				"type": "string",
+				"format": "date",
+				"$comment": "The applicant's date of birth."
+			},
+			"want_help_with_school_or_training": {
+				"type": "string",
+				"$comment": "Whether the applicant wants help with school or training."
+			},
+			"need_help_with_day_to_day_activities": {
+				"type": "string",
+				"$comment": "The extent to which the applicant needs help with day-to-day activities."
+			},
+			"do_you_feel_lonely_or_isolated": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's feelings of loneliness or isolation."
+			},
+			"days_per_week_moderate_exercise": {
+				"type": "string",
+				"$comment": "The number of days per week the applicant engages in moderate exercise."
+			},
+			"minutes_spent_exercising": {
+				"type": "string",
+				"$comment": "The number of minutes the applicant spends exercising."
+			},
+			"have_little_to_no_interest_in_doing_things": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's disinterest in doing things."
+			},
+			"feeling_down_or_depressed": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's feelings of sadness or depression."
+			},
+			"do_you_feel_this_kind_of_stress_these_days": {
+				"type": "string",
+				"$comment": "The level of stress the applicant is currently experiencing."
+			},
+			"have_you_had_5_or_more_drinks_in_a_day": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's alcohol consumption."
+			},
+			"tobacco_products_in_the_past_12_months": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's tobacco use in the past 12 months."
+			},
+			"prescription_druges_for_non_medical_use": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's non-medical use of prescription drugs."
+			},
+			"illegal_drugs_in_the_last_year": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's use of illegal drugs in the past year."
+			},
+			"worry_food_run_out": {
+				"type": "string",
+				"$comment": "The frequency of the applicant's worry about running out of food."
+			}
+		},
+		"required": [
+			"story",
+			"gender",
+			"enough_food",
+			"houshold_size",
+			"insecurity_frequency",
+			"posted",
+			"health_insurance",
+			"health_plan",
+			"income_bracket",
+			"living_situation_today",
+			"how_hard_to_pay_for_basics",
+			"cant_afford_balanced_meals",
+			"benefits",
+			"interested_in_other_programs"
+		]
+	}
+}

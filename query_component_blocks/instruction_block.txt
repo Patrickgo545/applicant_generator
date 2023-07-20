@@ -1,0 +1,3 @@
+Critical_level - This value will represent the overall critical level of an individual’s situation. This value equals the overall average of a person’s Z-code critical levels
+
+Assign a random value to each SDOH parameter. The overall average of each of the SDOH parameters must equal the individual’s “critical level”. Include numbers up to the hundredth decimal. Store these values internally
