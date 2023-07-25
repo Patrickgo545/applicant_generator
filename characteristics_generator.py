@@ -143,7 +143,7 @@ employment = employment_generate()
 
 
 
-# Create dictionary to house organize our characteristics
+# Create dictionary to organize our characteristics
 characteristics_dictionary = {
     'critical level' : critical_level, 
     'gender' : gender, 
