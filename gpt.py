@@ -2,9 +2,10 @@ import os
 import openai
 import query_components
 import pyodbc
+import json
 
 # CHAT GPT
-openai.api_key = "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"
+openai.api_key = ""
 
 response = openai.ChatCompletion.create(
   model="gpt-4",
@@ -18,6 +19,13 @@ response = openai.ChatCompletion.create(
   max_tokens=1024
 )
 
+content_json_string = response['choices'][0]['message']['content']
+print(content_json_string)
+
+data_dict = json.loads(response)
+print(data_dict)
+
+
 # SQL DATABASE
 server = 'LAPTOP-T37NP786' # (SQL) SELECT @@ServerName
 database = 'api_test'
@@ -29,7 +37,7 @@ try:
     cursor = connection.cursor()
 
     # Example: Execute a query
-    cursor.execute('SELECT TOP 5 * FROM dbo.api_test_table')
+    cursor.execute('SELECT * FROM dbo.api_test_table')
     rows = cursor.fetchall()
     for row in rows:
         print(row)

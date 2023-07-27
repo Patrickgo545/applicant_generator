@@ -19,5 +19,3 @@ characteristics_block = ('Here are some characteristics I want you to apply to t
 
 complete_query = [intro_block, parameters_block , instruction_block , characteristics_block , \
                   final_instruction , json_health_equity_questionnaire]
-
-print(complete_query)
