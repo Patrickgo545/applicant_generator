@@ -5,7 +5,7 @@ import pyodbc
 import json
 
 # CHAT GPT
-openai.api_key = "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"
+openai.api_key = ""
 
 response = openai.ChatCompletion.create(
   model="gpt-4",
@@ -15,7 +15,7 @@ response = openai.ChatCompletion.create(
       "content": str(query_components.complete_query)
     },
   ],
-  temperature=.5,
+  temperature=0,
   max_tokens=1400
 )
 
@@ -24,9 +24,9 @@ content_json_string = str(response['choices'][0]['message']['content'])
 content_json_deserialized = json.loads(content_json_string)
 survey = content_json_deserialized[0]
 
-print('response' , response)
-print('string' , content_json_string)
-print('deserialized' , content_json_deserialized)
+#print('response' , response)
+#print('string' , content_json_string)
+#print('deserialized' , content_json_deserialized)
 
 '''# Print entire GPT response 
 data_dict = json.loads(str(response))
