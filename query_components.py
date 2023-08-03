@@ -14,11 +14,19 @@ final_instruction = read_query_component('./applicant_generator/query_component_
 json_health_equity_questionnaire = \
     read_query_component('./applicant_generator/query_component_blocks/json_health_equity_questionnaire.txt')
 
-characteristics_block = ('Here are some characteristics I want you to apply to this individual ' , \
-                         characteristics_generator.characteristics_dictionary)
+characteristics_block = ('Here are some characteristics I want you to apply to this individual ') #, \
+                         #characteristics_generator.characteristics_dictionary)
 
-complete_query = [intro_block, parameters_block , instruction_block , characteristics_block , \
-                  final_instruction , json_health_equity_questionnaire]
+#complete_query = (intro_block, parameters_block , instruction_block , characteristics_block , \
+#                  characteristics_generator.characteristics_generator_loop(), final_instruction , json_health_equity_questionnaire)
+
+def complete_query():
+
+    remove_tab = json_health_equity_questionnaire.replace('\t' , '')
+    remove_newline = remove_tab.replace('\n' , '')
+
+    return str((intro_block, parameters_block , instruction_block , characteristics_block , \
+          characteristics_generator.characteristics_generator_loop(), final_instruction , remove_newline))
 
 
 # SQL QUERY
@@ -82,3 +90,71 @@ worry_food_run_out
 ) 
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 '''
+
+# not being used yet - would like to plug it into gpt module
+sql_query_values = {
+    "story", 
+    "gender",
+    "enough_food",
+    "houshold_size", 
+    "insecurity_frequency", 
+    "illnesses",
+    "posted", 
+    "health_insurance", 
+    "health_plan", 
+    "children_in_household", 
+    "seniors_in_household",
+    "medical_transportation", 
+    "grocery_transportation", 
+    "dental_transportation", 
+    "internet_access",
+    "computer_in_home", 
+    "preferred_language", 
+    "english_as_second_language", 
+    "orientation", 
+    "race",
+    "ethnicity", 
+    "cant_afford_balanced_meals", 
+    "skipped_meals", 
+    "benefits", 
+    "interested_in_other_programs",
+    "living_situation_today", 
+    "problems_with_housing", 
+    "assistance_required_for_housing",
+    "risk_of_losing_services", 
+    "want_help_with_employment", 
+    "how_hard_to_pay_for_basics", 
+    "income_bracket",
+    "live_with_illness", 
+    "illness_other_family_members", 
+    "difficulty_remembering_making_decisions",
+    "difficulty_doing_errands_alone", 
+    "health_insurance_type", 
+    "physically_hurt_you", 
+    "talk_down_to_you",
+    "threaten_you_with_harm", 
+    "scream_or_curse_at_you", 
+    "date_of_birth", 
+    "want_help_with_school_or_training",
+    "need_help_with_day_to_day_activities", 
+    "do_you_feel_lonely_or_isolated", 
+    "days_per_week_moderate_exercise",
+    "minutes_spent_exercising", 
+    "have_little_to_no_interest_in_doing_things", 
+    "feeling_down_or_depressed",
+    "do_you_feel_this_kind_of_stress_these_days", 
+    "have_you_had_5_or_more_drinks_in_a_day",
+    "tobacco_products_in_the_past_12_months", 
+    "prescription_druges_for_non_medical_use",
+    "illegal_drugs_in_the_last_year", 
+    "worry_food_run_out"
+}
+
+'''counter = 0 
+
+while counter < 5:
+    print(characteristics_generator.characteristics_dictionary)
+    counter += 1'''
+
+'''complete_query_test = [intro_block, characteristics_generator.characteristics_generator_loop() , instruction_block , characteristics_block , \
+                  final_instruction , json_health_equity_questionnaire]'''

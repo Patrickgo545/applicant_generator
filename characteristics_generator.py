@@ -92,8 +92,7 @@ def race_generate():
 def sexual_orientation_generate(): 
     sexual_orientation = ['Heterosexual' , 'i\'d rather not say' , 'Bi-Sexual' , 'Homosexual' , 'Other']
     weights = [0.7825 , 0.0928 , 0.0616 , 0.0349 , 0.028]
-
-
+    return random.choices(sexual_orientation , weights=weights)[0]
 
 def income_generate():
     average = 21417.54
@@ -124,11 +123,12 @@ def insurance_plan_generate():
 def employment_generate():
     status = ['Employed' , 'Need Employment' , 'Need Help Keeping Job' , 'Disabled']
     weights = [.6602 , .2521 , .086 , .0016]
+    return random.choices(status , weights=weights)[0]
 
 
 
 # Attach each function to a variable
-critical_level = critical_level_generator()
+"""critical_level = critical_level_generator()
 gender = gender_generate()
 age = age_generate()
 household_size = household_size_generate()
@@ -158,4 +158,40 @@ characteristics_dictionary = {
     'insurance_plan' : insurance_plan,
     'insurance_plan' : insurance_plan,
     'employment' : employment,
-}
+}"""
+
+
+# TURN CHARACTERISTICS INTO A FUNCTION
+def characteristics_generator_loop():
+    critical_level = critical_level_generator()
+    gender = gender_generate()
+    age = age_generate()
+    household_size = household_size_generate()
+    dependent_seniors = dependent_seniors_generate()
+    chronic_illness_qty = chronic_illnesses_qty_generate()
+    race = race_generate()
+    sexual_orientation = sexual_orientation_generate()
+    income = income_generate()
+    household_with_insurance = household_with_insurance_generate()
+    insurance_plan = insurance_plan_generate()
+    employment = employment_generate()
+
+    characteristics_dictionary = {
+        'critical level' : critical_level, 
+        'gender' : gender, 
+        'age' : age, 
+        'household size' : household_size, 
+        'dependent seniors' : dependent_seniors,
+        'chronic_illness_qty' : chronic_illness_qty,
+        'race' : race,
+        'sexual_orientation' : sexual_orientation,
+        'income' : income,
+        'household_with_insurance' : household_with_insurance,
+        'insurance_plan' : insurance_plan,
+        'insurance_plan' : insurance_plan,
+        'employment' : employment,
+    }
+
+    return characteristics_dictionary
+
+#print(characteristics_generator_loop())
