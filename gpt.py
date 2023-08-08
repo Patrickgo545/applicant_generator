@@ -4,16 +4,7 @@ import query_components
 import pyodbc
 import json
 
-openai.api_key = "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"
-
-#print('prompt' , query_components.complete_query())
-#print('response' , response)
-#print('string' , content_json_string)
-#print('deserialized' , content_json_deserialized)
-
-'''# Print entire GPT response 
-data_dict = json.loads(str(response))
-print(data_dict)'''
+openai.api_key = ""
 
 
 # SQL DATABASE
@@ -124,7 +115,8 @@ while heq_applicant_count < 5:
       },
     ],
     temperature=0,
-    max_tokens=1400
+    max_tokens=1200,
+    top_p = 1
   )
 
   # Target the HEQ - JSON portion only
@@ -145,3 +137,12 @@ while heq_applicant_count < 5:
       print('loop - failed')
 
 print('Done')
+
+#print('prompt' , query_components.complete_query())
+# print('response' , response)
+# print('string' , content_json_string)
+#print('deserialized' , content_json_deserialized)
+
+# Print entire GPT response 
+# data_dict = json.loads(str(response))
+# print(data_dict)

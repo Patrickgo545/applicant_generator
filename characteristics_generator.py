@@ -194,4 +194,4 @@ def characteristics_generator_loop():
 
     return characteristics_dictionary
 
-#print(characteristics_generator_loop())
+# print(characteristics_generator_loop())

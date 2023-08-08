@@ -7,12 +7,12 @@ def read_query_component(file_path):
         content = file.read()
     return content
 
-intro_block = read_query_component('./applicant_generator/query_component_blocks/intro_block.txt')
-parameters_block = read_query_component('./applicant_generator/query_component_blocks/parameters_block.txt')
-instruction_block = read_query_component('./applicant_generator/query_component_blocks/instruction_block.txt')
-final_instruction = read_query_component('./applicant_generator/query_component_blocks/final_instruction.txt')
+intro_block = read_query_component('./query_component_blocks/intro_block.txt')
+parameters_block = read_query_component('./query_component_blocks/parameters_block.txt')
+instruction_block = read_query_component('./query_component_blocks/instruction_block.txt')
+final_instruction = read_query_component('./query_component_blocks/final_instruction.txt')
 json_health_equity_questionnaire = \
-    read_query_component('./applicant_generator/query_component_blocks/json_health_equity_questionnaire.txt')
+    read_query_component('./query_component_blocks/json_health_equity_questionnaire.txt')
 
 characteristics_block = ('Here are some characteristics I want you to apply to this individual ') #, \
                          #characteristics_generator.characteristics_dictionary)
@@ -28,7 +28,7 @@ def complete_query():
     return str((intro_block, parameters_block , instruction_block , characteristics_block , \
           characteristics_generator.characteristics_generator_loop(), final_instruction , remove_newline))
 
-
+# print(complete_query())
 # SQL QUERY
 sql_query = '''
 INSERT INTO dbo.applicant_generator(
