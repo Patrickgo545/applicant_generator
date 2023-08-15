@@ -95,15 +95,17 @@ def json_check():
 
     if content_json_string_list[0] == '[':
         return True
-    else: 
+    else:
+        print(content_json_string_list) 
         return False
+        
 
 
 
 # CREATE LOOP
 heq_applicant_count = 0
 
-while heq_applicant_count < 1:
+while heq_applicant_count < 50:
   # GPT Prompt
 
   response = openai.ChatCompletion.create(
@@ -132,6 +134,7 @@ while heq_applicant_count < 1:
 
       heq_applicant_count += 1
       print('loop - successful')
+      print(content_json_string)
 
   except:
       print('loop - failed')
@@ -140,7 +143,7 @@ print('Done')
 
 #print('prompt' , query_components.complete_query())
 # print('response' , response)
-print('string' , content_json_string)
+# print('string' , content_json_string)
 #print('deserialized' , content_json_deserialized)
 
 # Print entire GPT response 

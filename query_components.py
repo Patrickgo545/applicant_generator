@@ -17,18 +17,20 @@ json_health_equity_questionnaire = \
 characteristics_block = ('Here are some characteristics I want you to apply to this individual ') #, \
                          #characteristics_generator.characteristics_dictionary)
 
-#complete_query = (intro_block, parameters_block , instruction_block , characteristics_block , \
-#                  characteristics_generator.characteristics_generator_loop(), final_instruction , json_health_equity_questionnaire)
 
 def complete_query():
+    query_string = str((intro_block.replace("\n", "").replace("\t", ""),\
+                        parameters_block.replace("\n", "").replace("\t", "") ,\
+                        instruction_block.replace("\n", "").replace("\t", "") ,\
+                        characteristics_block.replace("\n", "").replace("\t", "") , \
+                        characteristics_generator.characteristics_generator_loop(), \
+                        final_instruction.replace("\n", "").replace("\t", "") , \
+                        json_health_equity_questionnaire.replace("\n", "").replace("\t", "")))
 
-    remove_tab = json_health_equity_questionnaire.replace('\t' , '')
-    remove_newline = remove_tab.replace('\n' , '')
-
-    return str((intro_block, parameters_block , instruction_block , characteristics_block , \
-          characteristics_generator.characteristics_generator_loop(), final_instruction , remove_newline))
+    return query_string
 
 # print(complete_query())
+
 # SQL QUERY
 sql_query = '''
 INSERT INTO dbo.applicant_generator(
@@ -149,12 +151,3 @@ sql_query_values = {
     "illegal_drugs_in_the_last_year", 
     "worry_food_run_out"
 }
-
-'''counter = 0 
-
-while counter < 5:
-    print(characteristics_generator.characteristics_dictionary)
-    counter += 1'''
-
-'''complete_query_test = [intro_block, characteristics_generator.characteristics_generator_loop() , instruction_block , characteristics_block , \
-                  final_instruction , json_health_equity_questionnaire]'''

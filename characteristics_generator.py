@@ -183,13 +183,14 @@ def characteristics_generator_loop():
         'household size' : household_size, 
         'dependent seniors' : dependent_seniors,
         'chronic_illness_qty' : chronic_illness_qty,
-        'race' : race,
+        'race / ethnicity' : race,
         'sexual_orientation' : sexual_orientation,
         'income' : income,
         'household_with_insurance' : household_with_insurance,
         'insurance_plan' : insurance_plan,
         'insurance_plan' : insurance_plan,
         'employment' : employment,
+        'Benefits' : 'SSI, TANF, Medicare, etc.',
     }
 
     return characteristics_dictionary
