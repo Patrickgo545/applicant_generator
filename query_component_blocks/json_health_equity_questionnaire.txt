@@ -14,7 +14,7 @@
 			},
 			"enough_food": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has enough food."
+				"$comment": "Whether the applicant has enough food. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"houshold_size": {
 				"type": "integer",
@@ -22,7 +22,7 @@
 			},
 			"insecurity_frequency": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's food insecurity."
+				"$comment": "The frequency of the applicant's food insecurity. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"illnesses": {
 				"type": "string",
@@ -35,7 +35,7 @@
 			},
 			"health_insurance": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has health insurance."
+				"$comment": "Whether the applicant has health insurance. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"health_plan": {
 				"type": "string",
@@ -47,35 +47,35 @@
 			},
 			"seniors_in_household": {
 				"type": "integer",
-				"$comment": "The number of seniors in the applicant's household."
+				"$comment": "The number of seniors in the applicant's household. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"medical_transportation": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has access to medical transportation."
+				"$comment": "Whether the applicant has access to medical transportation. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"grocery_transportation": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has access to grocery transportation."
+				"$comment": "Whether the applicant has access to grocery transportation. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"dental_transportation": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has access to dental transportation."
+				"$comment": "Whether the applicant has access to dental transportation. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"internet_access": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has access to the internet."
+				"$comment": "Whether the applicant has access to the internet. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"computer_in_home": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has a computer at home."
+				"$comment": "Whether the applicant has a computer at home. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"preferred_language": {
 				"type": "string",
-				"$comment": "The language that the applicant prefers to use."
+				"$comment": "The language that the applicant prefers to use. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"english_as_second_language": {
 				"type": "boolean",
-				"$comment": "Whether English is a second language for the applicant."
+				"$comment": "Whether English is a second language for the applicant. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"orientation": {
 				"type": "string",
@@ -91,43 +91,43 @@
 			},
 			"cant_afford_balanced_meals": {
 				"type": "string",
-				"$comment": "How often the applicant can't afford balanced meals."
+				"$comment": "How often the applicant can't afford balanced meals. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"skipped_meals": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has skipped meals."
+				"$comment": "Whether the applicant has skipped meals. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"benefits": {
 				"type": "string",
-				"$comment": "The benefits the applicant is receiving."
+				"$comment": "The benefits the applicant is receiving. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"interested_in_other_programs": {
 				"type": "boolean",
-				"$comment": "Whether the applicant is interested in other programs."
+				"$comment": "Whether the applicant is interested in other programs. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"living_situation_today": {
 				"type": "string",
-				"$comment": "The applicant's current living situation."
+				"$comment": "The applicant's current living situation. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"problems_with_housing": {
 				"type": "string",
-				"$comment": "The problems the applicant is facing with their housing."
+				"$comment": "The problems the applicant is facing with their housing. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"assistance_required_for_housing": {
 				"type": "string",
-				"$comment": "The type of assistance the applicant needs for their housing."
+				"$comment": "The type of assistance the applicant needs for their housing. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"risk_of_losing_services": {
 				"type": "boolean",
-				"$comment": "Whether the applicant is at risk of losing services."
+				"$comment": "Whether the applicant is at risk of losing services. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"want_help_with_employment": {
 				"type": "string",
-				"$comment": "The type of employment help the applicant needs."
+				"$comment": "The type of employment help the applicant needs. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"how_hard_to_pay_for_basics": {
 				"type": "string",
-				"$comment": "How hard it is for the applicant to pay for basic needs."
+				"$comment": "How hard it is for the applicant to pay for basic needs. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"income_bracket": {
 				"type": "string",
@@ -143,11 +143,11 @@
 			},
 			"difficulty_remembering_making_decisions": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has difficulty remembering or making decisions."
+				"$comment": "Whether the applicant has difficulty remembering or making decisions. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"difficulty_doing_errands_alone": {
 				"type": "boolean",
-				"$comment": "Whether the applicant has difficulty doing errands alone."
+				"$comment": "Whether the applicant has difficulty doing errands alone. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"health_insurance_type": {
 				"type": "string",
@@ -155,19 +155,19 @@
 			},
 			"physically_hurt_you": {
 				"type": "string",
-				"$comment": "The frequency of physical harm inflicted on the applicant."
+				"$comment": "The frequency of physical harm inflicted on the applicant. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"talk_down_to_you": {
 				"type": "string",
-				"$comment": "The frequency of derogatory remarks directed at the applicant."
+				"$comment": "The frequency of derogatory remarks directed at the applicant. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"threaten_you_with_harm": {
 				"type": "string",
-				"$comment": "The frequency of threats directed at the applicant."
+				"$comment": "The frequency of threats directed at the applicant. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"scream_or_curse_at_you": {
 				"type": "string",
-				"$comment": "The frequency of verbal abuse experienced by the applicant."
+				"$comment": "The frequency of verbal abuse experienced by the applicant. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"date_of_birth": {
 				"type": "string",
@@ -176,55 +176,55 @@
 			},
 			"want_help_with_school_or_training": {
 				"type": "string",
-				"$comment": "Whether the applicant wants help with school or training."
+				"$comment": "Whether the applicant wants help with school or training. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"need_help_with_day_to_day_activities": {
 				"type": "string",
-				"$comment": "The extent to which the applicant needs help with day-to-day activities."
+				"$comment": "The extent to which the applicant needs help with day-to-day activities. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"do_you_feel_lonely_or_isolated": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's feelings of loneliness or isolation."
+				"$comment": "The frequency of the applicant's feelings of loneliness or isolation. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"days_per_week_moderate_exercise": {
 				"type": "string",
-				"$comment": "The number of days per week the applicant engages in moderate exercise."
+				"$comment": "The number of days per week the applicant engages in moderate exercise. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"minutes_spent_exercising": {
 				"type": "string",
-				"$comment": "The number of minutes the applicant spends exercising."
+				"$comment": "The number of minutes the applicant spends exercising. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"have_little_to_no_interest_in_doing_things": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's disinterest in doing things."
+				"$comment": "The frequency of the applicant's disinterest in doing things. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"feeling_down_or_depressed": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's feelings of sadness or depression."
+				"$comment": "The frequency of the applicant's feelings of sadness or depression. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"do_you_feel_this_kind_of_stress_these_days": {
 				"type": "string",
-				"$comment": "The level of stress the applicant is currently experiencing."
+				"$comment": "The level of stress the applicant is currently experiencing. Use context clues to infer a fake answer. Do not respond with null or blank"
 			},
 			"have_you_had_5_or_more_drinks_in_a_day": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's alcohol consumption."
+				"$comment": "The frequency of the applicant's alcohol consumption. Use context clues to infer a fake answer. Do not respond with null or blank."
 			},
 			"tobacco_products_in_the_past_12_months": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's tobacco use in the past 12 months."
+				"$comment": "The frequency of the applicant's tobacco use in the past 12 months. Use context clues to infer a fake answer. Do not respond with null or blank."
 			},
 			"prescription_druges_for_non_medical_use": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's non-medical use of prescription drugs."
+				"$comment": "The frequency of the applicant's non-medical use of prescription drugs. Use context clues to infer a fake answer. Do not respond with null or blank."
 			},
 			"illegal_drugs_in_the_last_year": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's use of illegal drugs in the past year."
+				"$comment": "The frequency of the applicant's use of illegal drugs in the past year. Use context clues to infer a fake answer. Do not respond with null or blank."
 			},
 			"worry_food_run_out": {
 				"type": "string",
-				"$comment": "The frequency of the applicant's worry about running out of food."
+				"$comment": "The frequency of the applicant's worry about running out of food. Use context clues to infer a fake answer. Do not respond with null or blank."
 			}
 		},
 		"required": [

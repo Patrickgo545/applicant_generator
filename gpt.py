@@ -103,7 +103,7 @@ def json_check():
 # CREATE LOOP
 heq_applicant_count = 0
 
-while heq_applicant_count < 5:
+while heq_applicant_count < 1:
   # GPT Prompt
 
   response = openai.ChatCompletion.create(
@@ -140,7 +140,7 @@ print('Done')
 
 #print('prompt' , query_components.complete_query())
 # print('response' , response)
-# print('string' , content_json_string)
+print('string' , content_json_string)
 #print('deserialized' , content_json_deserialized)
 
 # Print entire GPT response 
