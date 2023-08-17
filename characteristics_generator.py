@@ -127,6 +127,45 @@ def employment_generate():
 
 
 
+def benefits_generate(age , income , household_size , gender):
+    benefits = []
+    income_per_person = income / household_size
+
+    # SOCIAL SECURITY
+    if age >= 65 and income <= 30000:
+        chance = random.random()
+
+        if chance <= .9:
+            benefits.append('SSI')
+    
+
+    # TANF - TEMPORARY ASSISTANCE FOR NEEDY FAMILIES
+    if income_per_person <= 10000:
+        chance = random.random()
+
+        if chance <= .8:
+            benefits.append('TANF')
+
+
+    # SNAP - Supplemental Nutrition Assistance Program
+    if income_per_person < 20000:
+        chance = random.random()
+
+        if chance <= .8:
+            benefits.append('SNAP')
+
+
+    # WIC - For pregnant women or women with children under 5 yrs old
+    if gender == 'Female' and household_size > 1:
+        chance = random.random()
+
+        if chance <= .8:
+            benefits.append('WIC')
+
+
+    return benefits
+
+
 # Attach each function to a variable
 """critical_level = critical_level_generator()
 gender = gender_generate()
@@ -175,6 +214,7 @@ def characteristics_generator_loop():
     household_with_insurance = household_with_insurance_generate()
     insurance_plan = insurance_plan_generate()
     employment = employment_generate()
+    benefits = benefits_generate(age , income , household_size , gender)
 
     characteristics_dictionary = {
         'critical level' : critical_level, 
@@ -190,9 +230,9 @@ def characteristics_generator_loop():
         'insurance_plan' : insurance_plan,
         'insurance_plan' : insurance_plan,
         'employment' : employment,
-        'Benefits' : 'SSI, TANF, Medicare, etc.',
+        'Benefits' : benefits,
     }
 
     return characteristics_dictionary
 
-# print(characteristics_generator_loop())
+print(characteristics_generator_loop())
