@@ -3,9 +3,9 @@ import openai
 import query_components
 import pyodbc
 import json
+from dotenv import load_dotenv
 
 openai.api_key = ""
-
 
 # SQL DATABASE
 server = 'LAPTOP-T37NP786' # (SQL) SELECT @@ServerName
@@ -141,10 +141,10 @@ while heq_applicant_count < 50:
 
 print('Done')
 
-#print('prompt' , query_components.complete_query())
+# print('prompt' , query_components.complete_query())
 # print('response' , response)
 # print('string' , content_json_string)
-#print('deserialized' , content_json_deserialized)
+# # print('deserialized' , content_json_deserialized)
 
 # Print entire GPT response 
 # data_dict = json.loads(str(response))

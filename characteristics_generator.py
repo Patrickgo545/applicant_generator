@@ -17,14 +17,10 @@ def critical_level_generator():
     rounded_value = round(random_value, 2)
     return rounded_value
 
-
-
 def gender_generate():
     genders = ['Male' , 'Female' , 'Other']
     weights = [0.17 , 0.73 , 0.02]
     return random.choices(genders , weights = weights)[0]
-
-
 
 def age_generate():
     average_age = 35.1
@@ -36,8 +32,6 @@ def age_generate():
     
     return age
 
-
-
 def household_size_generate():
     average_household_size = 3.43
     sigma = 1.0
@@ -46,8 +40,6 @@ def household_size_generate():
     household_size = max(1, household_size)
 
     return household_size
-
-
 
 def children_generate():
     average_children = 1.36
@@ -58,8 +50,6 @@ def children_generate():
 
     return num_children
 
-
-
 def dependent_seniors_generate():
     average_dependent_seniors = 0.25
     sigma = 0.5
@@ -68,8 +58,6 @@ def dependent_seniors_generate():
     seniors = max(0, seniors)
 
     return seniors
-
-
 
 def chronic_illnesses_qty_generate():
     average = 2.34
@@ -80,14 +68,10 @@ def chronic_illnesses_qty_generate():
 
     return num_illness
 
-
-
 def race_generate():
     races = ['White' , 'Hispanic' , 'Black' , 'No Answer' , 'American Indian' , 'Asian' , 'Multi-Racial' , 'NHOPI']
     weights = [0.489 , 0.256 , 0.141 , 0.061 , 0.027 , 0.014 , 0.007 , 0.005]
     return random.choices(races , weights=weights)[0]
-
-
 
 def sexual_orientation_generate(): 
     sexual_orientation = ['Heterosexual' , 'i\'d rather not say' , 'Bi-Sexual' , 'Homosexual' , 'Other']
@@ -104,28 +88,20 @@ def income_generate():
     rounded_income = round(income , -3)
     return rounded_income
 
-
-
 def household_with_insurance_generate():
     insured = [True , False]
     weights = [0.82 , 0.18]
     return random.choices(insured , weights=weights)[0]
-
-
 
 def insurance_plan_generate():
     insurance = ['Commercial / Private' , 'Medicaid' , 'Medicare' , 'Duals']
     weights = [0.42 , 0.4 , 0.12 , 0.06]
     return random.choices(insurance , weights=weights)[0]
 
-
-
 def employment_generate():
     status = ['Employed' , 'Need Employment' , 'Need Help Keeping Job' , 'Disabled']
     weights = [.6602 , .2521 , .086 , .0016]
     return random.choices(status , weights=weights)[0]
-
-
 
 def benefits_generate(age , income , household_size , gender):
     benefits = []
@@ -166,39 +142,6 @@ def benefits_generate(age , income , household_size , gender):
     return benefits
 
 
-# Attach each function to a variable
-"""critical_level = critical_level_generator()
-gender = gender_generate()
-age = age_generate()
-household_size = household_size_generate()
-dependent_seniors = dependent_seniors_generate()
-chronic_illness_qty = chronic_illnesses_qty_generate()
-race = race_generate()
-sexual_orientation = sexual_orientation_generate()
-income = income_generate()
-household_with_insurance = household_with_insurance_generate()
-insurance_plan = insurance_plan_generate()
-employment = employment_generate()
-
-
-
-# Create dictionary to organize our characteristics
-characteristics_dictionary = {
-    'critical level' : critical_level, 
-    'gender' : gender, 
-    'age' : age, 
-    'household size' : household_size, 
-    'dependent seniors' : dependent_seniors,
-    'chronic_illness_qty' : chronic_illness_qty,
-    'race' : race,
-    'sexual_orientation' : sexual_orientation,
-    'income' : income,
-    'household_with_insurance' : household_with_insurance,
-    'insurance_plan' : insurance_plan,
-    'insurance_plan' : insurance_plan,
-    'employment' : employment,
-}"""
-
 
 # TURN CHARACTERISTICS INTO A FUNCTION
 def characteristics_generator_loop():
@@ -235,4 +178,4 @@ def characteristics_generator_loop():
 
     return characteristics_dictionary
 
-print(characteristics_generator_loop())
+# print(characteristics_generator_loop())
